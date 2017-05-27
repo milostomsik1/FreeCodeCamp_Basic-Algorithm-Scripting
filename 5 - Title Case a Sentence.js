@@ -1,18 +1,18 @@
 function titleCase(str) {
-  str = str.toLowerCase().split(" ");
-for (var i = 0, a=""; i < str.length; i ++) {
-  var word = str[i].split("");
-  word[0] = word[0].toUpperCase();
-  str[i] = word;
-  str[i] = str[i].join("");
-  console.log(str[i]);
-}
-str = str.join(" ");
-
-  return str;
+	str = str.toLowerCase().split(" ");
+	for (var i = 0, a=""; i < str.length; i ++) {
+		var word = str[i].split("");
+		word[0] = word[0].toUpperCase();
+		str[i] = word;
+		str[i] = str[i].join("");
+		console.log(str[i]);
+	}
+	str = str.join(" ");
+	return str;
 }
 
 titleCase("I'm a little tea pot");
+
 
 // Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
 //

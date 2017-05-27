@@ -1,10 +1,10 @@
 function repeatStringNumTimes(str, num) {
-  if (num<1) return "";
-var origStr = str;
-for (var i = 1; i < num; i++) {
-  str += origStr;
-}
-return str;
+	if (num<1) return "";
+	var origStr = str;
+	for (var i = 1; i < num; i++) {
+		str += origStr;
+	}
+	return str;
 }
 
 repeatStringNumTimes("abc", 3);

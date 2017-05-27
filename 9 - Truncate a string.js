@@ -1,18 +1,19 @@
 function truncateString(str, num) {
-  var truncStr = str;
-  if (str.length > num) {
-    switch (true) {
-      case num < 3:
-        truncStr = str.slice(0, num) + "...";
-        return truncStr;
-      case num >= 3:
-        truncStr = str.slice(0, num-3) + "...";
-        return truncStr;
-    }
-  } else {
-    return truncStr;
-  }
+	var truncStr = str;
+	if (str.length > num) {
+		switch (true) {
+			case num < 3:
+			truncStr = str.slice(0, num) + "...";
+			return truncStr;
+			case num >= 3:
+			truncStr = str.slice(0, num-3) + "...";
+			return truncStr;
+		}
+	} else {
+		return truncStr;
+	}
 }
+
 truncateString("A-tisket a-tasket A green and yellow basket", 11);
 
 

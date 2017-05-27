@@ -1,13 +1,13 @@
 function destroyer(arr) {
-  var args = [].slice.call(arguments);
-  args.shift();
+	var args = [].slice.call(arguments);
+	args.shift();
 
-  args.forEach(function(argumentElement) {
-    arr = arr.filter(function(arrElement) {
-      return !(arrElement === argumentElement); // filter filters if false, so sending false if there is match
-    });
-  });
-  return arr;
+	args.forEach(function(argumentElement) {
+		arr = arr.filter(function(arrElement) {
+			return !(arrElement === argumentElement);
+		});
+	});
+	return arr;
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);

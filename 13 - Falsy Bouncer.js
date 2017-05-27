@@ -1,13 +1,11 @@
 function bouncer(arr) {
-  return arr.filter(function(e) {
-    if (e === "" || e === null || e === 0 || Number.isNaN(e) || e === false || e === undefined) {
-      return false;
-    }
-      return true;
-  });
+	return arr.filter(function(e) { //EASY SOLUTION: return arr.filter(Boolean);
+		if (e === "" || e === null || e === 0 || Number.isNaN(e) || e === false || e === undefined) {
+			return false;
+		}
+		return true;
+	});
 }
-
-//EASY SOLUTION: return arr.filter(Boolean);
 
 bouncer([7, "ate", "", false, 9]);
 

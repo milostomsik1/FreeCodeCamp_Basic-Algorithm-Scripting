@@ -1,10 +1,11 @@
 function factorialize(num) {
-	var rezultat = 1; //uzima se u obzir da je faktorijal broja 0 uvek 1;
-		for (var i = num; i > 0; i--) {
-			rezultat *= i;
-		}
-	return rezultat;
+	var result = 1;
+	for (var i = num; i > 0; i--) {
+		result *= i;
+	}
+	return result;
 }
+
 factorialize(5);
 
 

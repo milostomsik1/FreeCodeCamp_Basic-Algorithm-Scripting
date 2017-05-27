@@ -1,20 +1,19 @@
 function mutation(arr) {
-  arr[0] = arr[0].toLowerCase();
-  arr[1] = arr[1].toLowerCase().split("");
-  retVal = 0;
+	arr[0] = arr[0].toLowerCase();
+	arr[1] = arr[1].toLowerCase().split("");
+	retVal = 0;
 
-  arr[1].forEach(function(e) {
-    if (arr[0].indexOf(e) >= 0) {
-      retVal++;
-    }
-  });
+	arr[1].forEach(function(e) {
+		if (arr[0].indexOf(e) >= 0) {
+			retVal++;
+		}
+	});
 
-  if (retVal === arr[1].length) {
-      return true;
-    } else {
-      return false;
-    }
-
+	if (retVal === arr[1].length) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 mutation(["hello", "hey"]);

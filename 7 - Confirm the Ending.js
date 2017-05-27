@@ -1,11 +1,10 @@
 function confirmEnding(str, target) {
-str = str.split(" ");
-  if (str[str.length-1].substr(-target.length) === target) {
-    return true;
-  } else {
-    return false;
-  }
-
+	str = str.split(" ");
+	if (str[str.length-1].substr(-target.length) === target) {
+		return true;
+	} else {
+		return false;
+	}
 }
 
 confirmEnding("Bastian", "n");
