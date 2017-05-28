@@ -15,3 +15,7 @@ Table of Contents:
 12. Mutations
 13. Falsy Bouncer
 14. Seek and Destroy
+15. Where Do I Belong
+16. Caesars Cipher
+
+Challenge description is located as a comment within each `.js` file.

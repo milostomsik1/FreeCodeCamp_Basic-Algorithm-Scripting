@@ -9,6 +9,24 @@ function bouncer(arr) {
 
 bouncer([7, "ate", "", false, 9]);
 
+// OR
+
+function bouncer(arr) {
+	var i=0;
+	var arrLen = arr.length;
+	while (i <= arrLen) {
+		if (arr[i] === "" || arr[i] === null || arr[i] === 0 || Number.isNaN(arr[i]) || arr[i] === false || arr[i] === undefined) {
+			arr.splice(i, 1);
+			arrLen = arr.length;
+		} else {
+			i++;
+		}
+	}
+	return arr;
+}
+
+bouncer([7, "ate", "", false, 9]);
+
 
 // Remove all falsy values from an array.
 //
