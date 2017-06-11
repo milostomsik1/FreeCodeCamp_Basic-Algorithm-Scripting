@@ -1,10 +1,5 @@
 function reverseString(str) {
-	var tempStr = [];
-	arrayStr = str.split("");
-	for (var i=0; i<str.length; i++) {
-		tempStr[i] = arrayStr[str.length-i-1];
-	}
-	return tempStr.join("");
+	return str.split("").reverse().join("");
 }
 
 reverseString("hello");

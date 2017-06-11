@@ -19,5 +19,3 @@ Table of Contents:
 16. Caesars Cipher
 
 Challenge description is located as a comment within each `.js` file.
-
-ALL OF THE FILES ARE IN QUEUE FOR CODE REFACTORING.

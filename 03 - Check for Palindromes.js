@@ -1,13 +1,13 @@
 function palindrome(str) {
-var tempStr = str;
+	var reversedString = str;
 
-str = str.toLowerCase().replace(/[^0-9a-z]/gi, '').split("").join("");
-tempStr = tempStr.toLowerCase().replace(/[^0-9a-z]/gi, '').split("").reverse().join("");
+	str = str.toLowerCase().replace(/[^0-9a-z]/gi, '').split("").join("");
+	reversedString = reversedString.toLowerCase().replace(/[^0-9a-z]/gi, '').split("").reverse().join("");
 
-if (tempStr !== str) {
-  return false;
-}
-  return true;
+	if (reversedString !== str) {
+		return false;
+	}
+	return true;
 }
 
 palindrome("eye");
