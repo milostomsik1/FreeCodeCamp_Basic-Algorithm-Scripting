@@ -1,19 +1,16 @@
 function mutation(arr) {
-	arr[0] = arr[0].toLowerCase();
-	arr[1] = arr[1].toLowerCase().split("");
-	retVal = 0;
+	checkWord = arr[0].toLowerCase();
+	targetWord = arr[1].toLowerCase().split("");
+	lettersFound = 0;
 
-	arr[1].forEach(function(e) {
-		if (arr[0].indexOf(e) >= 0) {
-			retVal++;
+	targetWord.forEach(function(letter) {
+		if (checkWord.indexOf(letter) >= 0) {
+			lettersFound++;
 		}
 	});
 
-	if (retVal === arr[1].length) {
-		return true;
-	} else {
-		return false;
-	}
+	return lettersFound === targetWord.length;
+
 }
 
 mutation(["hello", "hey"]);

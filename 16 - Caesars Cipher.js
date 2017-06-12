@@ -1,12 +1,12 @@
 function rot13(str) {
 	str = str.split("");
 
-	str.forEach(function(element, index) {
-		var elementASCII = element.charCodeAt();
-		if (elementASCII >= 65 && elementASCII <= 77) {
-			str[index] = String.fromCharCode(elementASCII+13);
-		} else if (elementASCII >= 78 && elementASCII <= 90) {
-			str[index] = String.fromCharCode(elementASCII-13);
+	str.forEach(function(letter, index) {
+		var letterASCII = letter.charCodeAt();
+		if (letterASCII >= 65 && letterASCII <= 77) {
+			str[index] = String.fromCharCode(letterASCII+13);
+		} else if (letterASCII >= 78 && letterASCII <= 90) {
+			str[index] = String.fromCharCode(letterASCII-13);
 		}
 	});
 

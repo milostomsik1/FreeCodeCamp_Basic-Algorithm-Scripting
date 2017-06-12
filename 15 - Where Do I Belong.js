@@ -1,15 +1,13 @@
 function getIndexToIns(arr, num) {
-	arr.sort(function (a, b) {
-		return a - b;
-	});
-	var position;
-	for (var i = 0; i < arr.length; i++) {
-		if (arr[i] < num) {
-			position = i+1;
-		} else if (arr[i] === num) {
-			position = i;
+	arr.sort(function (a, b) {return a - b;});
+
+	arr.forEach(function(element, index) {
+		if (element < num) {
+			position = index+1;
+		} else if (element === num) {
+			position = index;
 		}
-	}
+	});
 	return position;
 }
 

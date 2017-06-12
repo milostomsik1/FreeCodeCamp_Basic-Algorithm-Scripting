@@ -1,10 +1,6 @@
 function repeatStringNumTimes(str, num) {
-	if (num<1) return "";
-	var origStr = str;
-	for (var i = 1; i < num; i++) {
-		str += origStr;
-	}
-	return str;
+	if (num<=0) return "";
+	return str.repeat(num);
 }
 
 repeatStringNumTimes("abc", 3);

@@ -3,8 +3,8 @@ function destroyer(arr) {
 	args.shift();
 
 	args.forEach(function(argumentElement) {
-		arr = arr.filter(function(arrElement) {
-			return !(arrElement === argumentElement);
+		arr = arr.filter(function(arrayElement) {
+			return !(arrayElement === argumentElement);
 		});
 	});
 	return arr;
